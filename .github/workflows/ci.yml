@@ -1,0 +1,14 @@
+name: Simple GitHub Action
+
+on: [push]  # Runs when code is pushed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Runner machine
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4  # Clones the repo
+
+      - name: Run a Simple Script
+        run: echo "Hello, GitHub Actions!"
