@@ -1,6 +1,6 @@
 name: Simple GitHub Action
 
-on: [push]  # Runs when code is pushed
+on: [push, workflow_dispatch] 
 
 jobs:
   build:
